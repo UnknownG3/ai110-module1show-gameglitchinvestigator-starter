@@ -8,7 +8,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
 
-When I first ran the code, everything felt normal. However, when I was playing the game I notice there were somethings that were odd.
+### When I first ran the code, everything felt normal. However, when I was playing the game I notice there were somethings that were odd. 
 ---
 
 ## 2. How did you use AI as a teammate?
