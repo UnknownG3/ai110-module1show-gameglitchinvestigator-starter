@@ -7,14 +7,20 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
+
 When I first ran the code, everything felt normal. However, when I was playing the game I notice there were somethings that were odd. 
+1. The hint of the game keep saying the oppsite, like when it was lower, it suppose to be higher
+2. After getting the correct response, and after clicking new game, the guess number button won't work.
+3. After giving the wrong answer for all the attempt, the new game button won't work.
 
 ---
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+Claude
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
 ---
