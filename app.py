@@ -99,7 +99,6 @@ with st.expander("Developer Debug Info"):
     st.write("Attempts:", st.session_state.attempts)
     st.write("Score:", st.session_state.score)
     st.write("Difficulty:", difficulty)
-    st.write("History:", st.session_state.history)
 
 raw_guess = st.text_input(
     "Enter your guess:",
@@ -121,6 +120,7 @@ if new_game:
     st.session_state.attempts = 0
     st.session_state.secret = random.randint(1, 100)
     st.session_state.status = "playing"
+    st.session_state.history = []
     st.success("New game started.")
     st.rerun()
 
@@ -171,6 +171,11 @@ if submit:
                     f"The secret was {st.session_state.secret}. "
                     f"Score: {st.session_state.score}"
                 )
+
+if st.session_state.history:
+    st.subheader("Guess History")
+    for i, entry in enumerate(st.session_state.history, start=1):
+        st.write(f"{i}. {entry}")
 
 st.divider()
 st.caption("Built by an AI that claims this code is production-ready.")
