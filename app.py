@@ -76,7 +76,7 @@ if "secret" not in st.session_state:
     st.session_state.secret = random.randint(low, high)
 
 if "attempts" not in st.session_state:
-    st.session_state.attempts = 1
+    st.session_state.attempts = 0
 
 if "score" not in st.session_state:
     st.session_state.score = 0
@@ -106,9 +106,12 @@ raw_guess = st.text_input(
     key=f"guess_input_{difficulty}"
 )
 
+def _on_submit():
+    st.session_state.attempts += 1
+
 col1, col2, col3 = st.columns(3)
 with col1:
-    submit = st.button("Submit Guess 🚀")
+    submit = st.button("Submit Guess 🚀", on_click=_on_submit)
 with col2:
     new_game = st.button("New Game 🔁")
 with col3:
@@ -129,8 +132,6 @@ if st.session_state.status != "playing":
     st.stop()
 
 if submit:
-    st.session_state.attempts += 1
-
     ok, guess_int, err = parse_guess(raw_guess)
 
     if not ok:
