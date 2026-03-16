@@ -25,9 +25,9 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- Pick a random number and you have to guess the number, whether with hint or not.
+- Wrong hints, Attempt shown is wrong, History
+- Fixing the inequaltiy in check_guess, setting attempt to 0
 
 ## 📸 Demo
 
