@@ -20,7 +20,7 @@ When I first ran the code, everything felt normal. However, when I was playing t
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
 Claude
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-
+One sugesstion that was correct was that in the check_guess, it correctly fix the mistake of fixing the inequalities.
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
 ---
